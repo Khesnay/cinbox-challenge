@@ -1,0 +1,113 @@
+@use './variables.scss' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background:#09050C;
+
+}
+
+body {
+  margin: 0 !important;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: $text-primary;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background:linear-gradient(45deg, #09050C 0%, #040910 100%);
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (max-width: $mobile) {
+    padding: 0 $spacing-sm;
+  }
+}
+
+// Button component styles
+.btn {
+  padding: $spacing-sm $spacing-lg;
+  border: none;
+  border-radius: $border-radius-md;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $box-shadow-hover;
+  }
+
+  &.btn-primary {
+    background-color: $primary-color;
+    color: white;
+
+    &:hover {
+      background-color: adjust($primary-color, -22.869955157%);
+    }
+  }
+
+
+  &.btn-horror {
+    background-color: $horror-primary;
+    color: white;
+
+    &:hover {
+      background-color: adjust($horror-primary, -22.869955157%);
+    }
+  }
+
+  &.btn-adv {
+    background-color: $adv-primary;
+    color: white;
+
+    &:hover {
+    background-color: adjust($adv-primary, -22.869955157%);
+    }
+  }
+
+  &.btn-drama {
+    background-color: $drama-primary;
+    color: white;
+
+    &:hover {
+      background-color: adjust($drama-primary, -22.869955157%);
+    }
+  }
+}
+
+// Loading animation
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 1.2rem;
+  color: $text-secondary;
+}
+
+.spinner {
+  border: 3px solid $text-secondary;
+  border-top: 3px solid $primary-color;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-right: $spacing-md;
+}

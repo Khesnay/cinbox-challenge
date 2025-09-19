@@ -1,0 +1,92 @@
+@use '../../styles/variables.scss' as *;
+
+.header {
+  background: linear-gradient(15deg, rgba(43, 43, 43, 0.5) 100%, rgba(25, 25, 25, 0.66) 100%);
+  padding: $spacing-md $spacing-xl;
+  border-radius: $border-radius-3xl*2;
+  box-shadow: $box-shadow;
+  position: sticky;
+  width: 66%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(24px);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $text-primary;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-decoration: none;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(1);
+
+
+    &__hover{
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: $spacing-xl;
+    align-items: center;
+
+    @media (max-width: $mobile) {
+      gap: $spacing-md;
+    }
+  }
+
+  &__link {
+    color: $text-primary;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+
+    &:hover {
+      color: $accent-gold;
+    }
+
+    &.active {
+      color: $accent-gold;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: $accent-gold;
+        border-radius: 1px;
+      }
+    }
+  }
+
+  &__wishlist-count {
+    background: $primary-color;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: $spacing-xs;
+  }
+}

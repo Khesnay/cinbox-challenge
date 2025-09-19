@@ -1,0 +1,14 @@
+@use '../../styles/variables.scss' as *;
+
+.film-detail{
+padding: $spacing-lg ;
+
+
+&__content{
+    display: flex;
+flex-direction: row;
+gap: $spacing-lg;
+justify-content: space-between;
+align-items: center;
+}
+}

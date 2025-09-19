@@ -1,0 +1,16 @@
+@use '../../styles/variables.scss' as *;
+
+
+.wishlist__grid{
+
+
+    .wishlist-item{
+
+        &__image{
+            width: 20rem;
+            height: 25rem;
+        }
+    }
+
+    padding: $spacing-xxl 0
+}

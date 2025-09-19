@@ -1,0 +1,40 @@
+// Color palette
+$primary-color: #e50914;
+$secondary-color: #221f1f;
+$background-dark: #141414;
+$background-light: #181818;
+$text-primary: #ffffff;
+$text-secondary: #b3b3b3;
+$accent-gold: #ffd700;
+
+// Category specific colors
+$horror-primary: #e50914;
+$adv-primary: #ff6b35;
+$drama-primary: #914c93;
+
+// Breakpoints
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1200px;
+
+// Spacing system
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-xxl: 3rem;
+
+// Border radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+$border-radius-xxl: 20px;
+$border-radius-3xl: 24px;
+$border-radius-4xl: 28px;
+
+
+// Shadows
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+$box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.4);
