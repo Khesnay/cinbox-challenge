@@ -1,8 +1,6 @@
-# Movie Browser
-
 A React-based movie browsing application built with TypeScript, Redux Toolkit, and Vite.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Frontend**: React 19, TypeScript, Redux Toolkit
 - **Styling**: Sass
@@ -12,20 +10,20 @@ A React-based movie browsing application built with TypeScript, Redux Toolkit, a
 - **Backend**: Express.js
 - **HTTP Client**: Axios
 
-## 📋 Prerequisites
+## Prerequisites
 
 Make sure you have the following installed:
 
 - **Node.js** (version 18 or higher)
 - **npm** or **yarn**
 
-## 🛠️ Installation
+## Installation
 
 1. Clone the repository:
 
 ```bash
-git clone <your-repo-url>
-cd movie-browser
+git clone <https://github.com/Khesnay/cinbox-challenge.git>
+cd cinbox-challenge
 ```
 
 2. Install dependencies:
@@ -33,8 +31,6 @@ cd movie-browser
 ```bash
 npm install
 ```
-
-## 🏃‍♂️ Running the Application
 
 ### Development Mode
 
@@ -45,24 +41,6 @@ npm run dev
 ```
 
 This will run the Express server (likely on `http://localhost:3000`)
-
-### Production Build
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-### Preview Production Build
-
-Preview the production build locally:
-
-```bash
-npm run preview
-```
-
-## 🧪 Testing
 
 ### Run Tests
 
@@ -86,8 +64,6 @@ npm run coverage
 - **Run once**: Use `npx vitest run` for a single test run
 - **Specific test file**: `npx vitest run src/path/to/test.test.ts`
 
-## 🔍 Code Quality
-
 ### Linting
 
 Run ESLint to check code quality:
@@ -102,21 +78,6 @@ Auto-fix linting issues where possible:
 
 ```bash
 npm run lint -- --fix
-```
-
-## 📁 Project Structure
-
-```
-movie-browser/
-├── src/
-│   ├── components/        # React components
-│   ├── store/            # Redux store and slices
-│   ├── services/         # API services
-│   ├── types/            # TypeScript type definitions
-│   └── ...
-├── server.ts             # Express server
-├── package.json
-└── ...
 ```
 
 ## Available Scripts
